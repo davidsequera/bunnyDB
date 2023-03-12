@@ -1,0 +1,7 @@
+Dia y Hora: 11/04/2021_22:03
+Pelicula: Up
+Sala: 22:00
+Hora de la funcion: Gerardo Arango Puerta
+Numero de silla: 11
+-------------------
+VALOR TOTAL: $8.000

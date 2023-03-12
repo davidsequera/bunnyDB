@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://img.icons8.com/cotton/2x/clapperboard.png" />
+    <link rel="stylesheet" href="./index.css">
+    <title>CineApp</title>
+</head>
+<body>
+    <h1>Welcome to CineApp</h1>
+    <section id="carousel">
+
+    </section>
+
+    <section>
+        <div class="mask hidden" id="mask">
+            <button onclick="closeMask()" class="close" id="close" >X</button>
+            <div class="main-container">
+                <div class="showtimes-container">
+                    <h2>Horarios</h2>
+                    <ul class="showtimes" id="showtimes">
+
+                    </ul>
+                </div>
+                <div class="room-container">
+                    <h2 class="screen-title">Pantalla</h2>
+                    <ul class="room" id="general">
+
+                    </ul>
+                    <ul class="room" id="preferential">
+
+                    </ul>
+                    <h2 class="room-title" id="room-title"></h2>
+                </div>
+            </div>
+        </div>       
+    </section>
+
+    <footer>
+        <h2>Just a Simple Footer: u'know for space </h2>
+    </footer>
+</body>
+
+
+<script src="db.js"></script>
+<script src="index.js"></script>
+</html>

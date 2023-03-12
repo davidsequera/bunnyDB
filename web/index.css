@@ -1,0 +1,206 @@
+html{
+    background-color: rgb(219, 8, 54);
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    color: antiquewhite;
+}
+h1{
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+}
+
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+button:focus {
+    outline: none;
+}
+#carousel{
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 6rem; */
+    justify-content: space-around;
+    
+}
+.movie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem 1rem;
+    transition:  cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+.movie:hover{
+    margin: 0;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+}
+.movie img{
+    width: 14vw;
+    height: 21vw;
+    object-fit: cover;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    transition:  cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+.movie:hover img{
+    width: 16vw;
+    height: 28vw;
+}
+.movie h2{
+    color:antiquewhite;
+    display: none;
+    font-size: 1.4rem;
+    margin: 0.1rem 0;
+    transition:  cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.movie:hover h2{
+    display: block;
+}
+
+.mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+.hidden{
+    display: none;
+}
+.close{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 2rem 3rem;
+    align-self:flex-end;
+    color: white;
+}
+
+.main-container{
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    width: 80vw;
+    min-height: 30rem;
+    border-radius: 1rem;
+    background-color: whitesmoke;
+    color:grey;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+}
+.main-container div{
+    padding: 0 0.5rem;
+    margin: 0 0.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.showtimes-container{
+    border-right: 2px rgba(219, 8, 54, 0.5) solid;
+}
+.showtimes{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.showtime{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: center;
+    height: 4rem;
+    width: 6rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: brown;
+    background-color: white;
+    border-radius: 1rem;
+    margin: 0.4rem;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    transition:  cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.selected{
+    background-color: rgba(128, 128, 128, 0.548);
+}
+.room-container{
+
+    justify-content: center;
+    /* align-items: center; */
+}
+.room{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    margin: 0 1rem;
+}
+.screen-title{
+    align-self: center;
+    text-align: center;
+    color: whitesmoke;
+    background-color: rgb(20, 20, 20);
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 6rem;
+}
+.seat{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    justify-content: center;
+    height: 4vw;
+    width: 4vw;
+    color:rgba(220, 20, 60, 0.767);
+    border-radius: 1rem;
+    margin: 0.4rem;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    transition:  cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.room-title{
+    align-self: center;
+    font-weight: normal;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.G{
+    border: 0.4vw white solid;
+}
+.P{
+    border: 0.4vw gold solid;
+}
+.A{
+    background-color:rgba(0, 255, 0, 0.26);
+}
+.A:hover{
+    background-color: aquamarine;
+}
+
+.B{
+    background-color:rgba(220, 20, 60, 0.295);
+}
+.B:hover{
+    background-color:rgba(220, 20, 60, 0.7);
+
+}
+
